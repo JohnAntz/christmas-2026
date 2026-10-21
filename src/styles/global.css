@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+body {
+  font-family:
+    var(--indie-flower), "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}

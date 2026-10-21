@@ -1,0 +1,32 @@
+---
+import "../styles/global.css";
+import { ClientRouter } from "astro:transitions";
+import { Font } from "astro:assets";
+const { title, description } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, viewport-fit=cover" />
+		<meta name="generator" content={Astro.generator} />
+		<meta name="description" content={description} />
+		<link rel="icon" type="image/svg+xml" href="/logo.svg" />
+		<Font cssVariable="--indie-flower" />
+		<title>{title}</title>
+		<ClientRouter/>
+	</head>
+	<body class="flex min-h-screen flex-col text-slate-900 pt-[env(safe-area-inset-top)] pb-[env(safe-area-inset-bottom)]">
+		<div class="absolute inset-0 -z-10 h-lvh bg-white bg-[linear-gradient(to_right,#8080801a_2px,transparent_2px),linear-gradient(to_bottom,#8080801a_2px,transparent_2px)] bg-[size:24px_24px]"></div>
+		<slot />
+		<footer class="mt-auto w-full py-6 text-center text-slate-900">
+    		&copy; JohnAntz 2026
+  		</footer>
+		
+	</body>
+
+</html>
+
+
+
