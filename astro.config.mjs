@@ -16,4 +16,6 @@ export default defineConfig({
       cssVariable: "--indie-flower",
     },
   ],
+  site: "https://johnantz.github.io",
+  base: "/christmas-2026",
 });
